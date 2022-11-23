@@ -235,8 +235,51 @@ const Portfolio = () => {
           </div>
           {/* list of skills */}
           <section className='mx-14 flex flex-wrap gap-4'>
-            <div className='flex'>
-                
+            {/* st ragual church school */}
+            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+              <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
+                St. Ragual Church School
+              </h2>
+              <div className='flex flex-col text-xs'>
+                <p className='font-bold text-gray-600'>High School</p>
+                <span className='text-gray-500'>2010 - 2016</span>
+              </div>
+            </div>
+            {/* Hawassa university */}
+            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+              <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
+                hawassa university
+              </h2>
+              <div className='flex flex-col text-xs'>
+                <p className='font-bold text-gray-600'>
+                  Mechanical Engineering
+                </p>
+                <span className='text-gray-500'>2016 - 2020</span>
+              </div>
+            </div>
+            {/* Fontys University */}
+            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+              <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
+                Fontys university
+              </h2>
+              <div className='flex flex-col text-xs'>
+                <p className='font-bold text-gray-600'>
+                  Computer Science Engineering
+                </p>
+                <span className='text-gray-500'>2020 - 2021</span>
+              </div>
+            </div>
+            {/* HYF University */}
+            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+              <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
+                HackYourFuture
+              </h2>
+              <div className='flex flex-col text-xs'>
+                <p className='font-bold text-gray-600'>
+                  Full Stack Web Development
+                </p>
+                <span className='text-gray-500'>2021 - 2022</span>
+              </div>
             </div>
           </section>
         </section>
