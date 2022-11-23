@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import CalenderIcon from '../components/icons/CalenderIcon'
 
 const Portfolio = () => {
@@ -356,6 +357,133 @@ const Portfolio = () => {
                 open-minded, have an agile mindset, and can quickly adapt to new
                 environments and ways of working.
               </p>
+            </div>
+          </section>
+        </section>
+        {/* Projects */}
+        <section className='flex flex-col items-start max-w-2xl gap-5'>
+          <div className='flex justify-center items-center gap-8'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+              <span className='h-2 w-2 bg-green-400 rounded-full'></span>
+            </span>
+            <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
+              Projects
+            </h1>
+          </div>
+          <section className='mx-14 flex flex-col gap-5 w-full'>
+            {/* Project One */}
+            <div className='flex flex-1 h-fit gap-3 max-w-lg rounded-md p-3 bg-gray-50'>
+              <div className='relative w-40 h-40 rounded-sm overflow-hidden'>
+                <Image
+                  src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
+                  alt='profile'
+                  fill
+                  className='object-cover'
+                />
+              </div>
+              <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+                <h2 className='text-gray-800 text-lg font-semibold first-letter:capitalize'>
+                  Project 1
+                </h2>
+                <p className='text-gray-500 tracking-wide'>
+                  Passionate web developer with a years of coding experience. I
+                  love building new products and improving existing ones.
+                </p>
+
+                <Link href='https://www.google.com/'>
+                  <span className='text-blue-500 cursor-pointer'>
+                    read more...
+                  </span>
+                </Link>
+              </div>
+            </div>
+            {/* Project Two */}
+            <div className='flex flex-1 h-fit gap-3 max-w-lg rounded-md p-3 bg-gray-50'>
+              <div className='relative w-40 h-40 rounded-sm overflow-hidden'>
+                <Image
+                  src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
+                  alt='profile'
+                  fill
+                  className='object-cover'
+                />
+              </div>
+              <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+                <h2 className='text-gray-800 text-lg font-semibold first-letter:capitalize'>
+                  Project 2
+                </h2>
+                <p className='text-gray-500 tracking-wide'>
+                  Passionate web developer with a years of coding experience. I
+                  love building new products and improving existing ones.
+                </p>
+
+                <Link href='https://www.google.com/'>
+                  <span className='text-blue-500 cursor-pointer'>
+                    read more...
+                  </span>
+                </Link>
+              </div>
+            </div>
+            {/* Project Three */}
+            <div className='flex flex-1 h-fit gap-3 max-w-lg rounded-md p-3 bg-gray-50'>
+              <div className='relative w-40 h-40 rounded-sm overflow-hidden'>
+                <Image
+                  src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
+                  alt='profile'
+                  fill
+                  className='object-cover'
+                />
+              </div>
+              <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+                <h2 className='text-gray-800 text-lg font-semibold first-letter:capitalize'>
+                  Project 3
+                </h2>
+                <p className='text-gray-500 tracking-wide'>
+                  Passionate web developer with a years of coding experience. I
+                  love building new products and improving existing ones.
+                </p>
+
+                <Link href='https://www.google.com/'>
+                  <span className='text-blue-500 cursor-pointer'>
+                    read more...
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </section>
+        </section>
+        {/* Courses */}
+        <section className='flex flex-col items-start max-w-2xl gap-5'>
+          <div className='flex justify-center items-center gap-8'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+              <span className='h-2 w-2 bg-green-400 rounded-full'></span>
+            </span>
+            <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
+              Courses
+            </h1>
+          </div>
+          {/* list of Courses */}
+          <section className='mx-14 flex flex-wrap gap-4'>
+            {/* Fullstack in HYF */}
+            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+              <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
+                MERN Stack
+              </h2>
+              <div className='flex flex-col text-xs'>
+                <p className='font-bold text-gray-600'>HYF Bootcamp</p>
+                <span className='text-gray-500'>2010 - 2016</span>
+              </div>
+            </div>
+            {/* AWS Arcethectur */}
+            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+              <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
+                AWS Serverless Architecture
+              </h2>
+              <div className='flex flex-col text-xs'>
+                <p className='font-bold text-gray-600'>
+                  Production Ready Serverless
+                </p>
+                <span className='text-gray-500'>2016 - 2020</span>
+              </div>
             </div>
           </section>
         </section>
