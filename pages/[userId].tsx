@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import CalenderIcon from '../components/icons/CalenderIcon'
 
 const Portfolio = () => {
   return (
     <main className='bg-white h-fit flex justify-start gap-16 max-w-6xl mx-auto p-10 my-10 rounded-md'>
       <section className='flex flex-col max-w-[18rem] h-fit gap-5'>
-        <div className='relative w-72 h-56 bg-red-50 rounded-md overflow-hidden'>
+        <div className='relative w-72 h-56 rounded-md overflow-hidden'>
           <Image
             src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
             alt='profile'
@@ -163,7 +164,7 @@ const Portfolio = () => {
       </section>
       <section className='flex flex-col gap-10'>
         {/* About me section */}
-        <section className='flex flex-col items-start max-w-2xl gap-5'>
+        <section className='flex flex-col items-start max-w-2xl gap-4'>
           <div className='flex justify-center items-center gap-8'>
             <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
@@ -280,6 +281,81 @@ const Portfolio = () => {
                 </p>
                 <span className='text-gray-500'>2021 - 2022</span>
               </div>
+            </div>
+          </section>
+        </section>
+        {/* Experience */}
+        <section className='flex flex-col items-start max-w-2xl gap-5'>
+          <div className='flex justify-center items-center gap-8'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+              <span className='h-2 w-2 bg-green-400 rounded-full'></span>
+            </span>
+            <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
+              Experience
+            </h1>
+          </div>
+          <section className='mx-14 flex flex-col gap-5 w-full'>
+            {/* microsoft */}
+            <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+              <div className='flex flex-1 gap-4 w-fit text-gray-500'>
+                <span className=''>
+                  <CalenderIcon />
+                </span>
+                <p className='font-semibold'>July 2021 - January 2022</p>
+              </div>
+              <div className='flex flex-1 gap-4 w-fit text-gray-500'>
+                <div className='relative w-12 h-12 rounded-md overflow-hidden'>
+                  <Image
+                    src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
+                    alt='profile'
+                    fill
+                    className='object-cover'
+                  />
+                </div>
+                <div>
+                  <h2 className='text-gray-500 capitalize'>Appel</h2>
+                  <p className=' text-gray-800 font-semibold first-letter:capitalize'>
+                    Front-End Developer
+                  </p>
+                </div>
+              </div>
+              <p className='text-gray-500 tracking-wide'>
+                Passionate web developer with a years of coding experience. I
+                love building new products and improving existing ones. I am
+                open-minded, have an agile mindset, and can quickly adapt to new
+                environments and ways of working.
+              </p>
+            </div>
+            {/* google */}
+            <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+              <div className='flex flex-1 gap-4 w-fit text-gray-500'>
+                <span className=''>
+                  <CalenderIcon />
+                </span>
+                <p className='font-semibold'>July 2021 - January 2022</p>
+              </div>
+              <div className='flex flex-1 gap-4 w-fit text-gray-500'>
+                <div className='relative w-12 h-12 rounded-md overflow-hidden'>
+                  <Image
+                    src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
+                    alt='profile'
+                    fill
+                    className='object-cover'
+                  />
+                </div>
+                <div>
+                  <h2 className='text-gray-500 capitalize'>Google</h2>
+                  <p className=' text-gray-800 font-semibold first-letter:capitalize'>
+                    UI/UX Designer
+                  </p>
+                </div>
+              </div>
+              <p className='text-gray-500 tracking-wide'>
+                Passionate web developer with a years of coding experience. I
+                love building new products and improving existing ones. I am
+                open-minded, have an agile mindset, and can quickly adapt to new
+                environments and ways of working.
+              </p>
             </div>
           </section>
         </section>
