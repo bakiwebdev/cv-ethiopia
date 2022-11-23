@@ -1,10 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import CalenderIcon from '../components/icons/CalenderIcon'
+import GlobeIcon from '../components/icons/GlobeIcon'
+import MailIcon from '../components/icons/MailIcon'
+import MapPinIcon from '../components/icons/MapPinIcon'
+import PhoneIcon from '../components/icons/PhoneIcon'
+import Instagram from '../components/png/instagram.png'
+import Twitter from '../components/png/twitter.png'
+import Dribbble from '../components/png/dribbble.png'
+import Linkedin from '../components/png/linkedin.png'
+import DownloadIcon from '../components/icons/DownloadIcon'
 
 const Portfolio = () => {
   return (
     <main className='bg-white h-fit flex justify-start gap-16 max-w-6xl mx-auto p-10 my-10 rounded-md'>
+      <button className='fixed m-5 bottom-4 right-0 capitalize flex flex-1 gap-2 w-fit bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full'>
+        <DownloadIcon />
+        Download CV
+      </button>
       <section className='flex flex-col max-w-[18rem] h-fit gap-5'>
         <div className='relative w-72 h-56 rounded-md overflow-hidden'>
           <Image
@@ -29,7 +42,9 @@ const Portfolio = () => {
           <h1 className='font-semibold text-gray-600 mb-2'>Personal Details</h1>
           {/* personal detail card email */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-7 h-7 rounded-full bg-gray-200'></span>
+            <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
+              <MailIcon />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 Email
@@ -39,7 +54,9 @@ const Portfolio = () => {
           </div>
           {/* personal detail card website */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
+              <GlobeIcon />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 website
@@ -51,7 +68,9 @@ const Portfolio = () => {
           </div>
           {/* personal detail card phone */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
+              <PhoneIcon />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 phone
@@ -61,7 +80,9 @@ const Portfolio = () => {
           </div>
           {/* personal detail card address */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
+              <MapPinIcon />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 Address
@@ -77,7 +98,14 @@ const Portfolio = () => {
           <h1 className='font-semibold text-gray-600 mb-2'>Socials</h1>
           {/* Social card instagram */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='relative w-8 h-8 rounded-full bg-gray-200 overflow-hidden'>
+              <Image
+                src={Instagram}
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 Instagram
@@ -87,7 +115,14 @@ const Portfolio = () => {
           </div>
           {/* Social card dribbble */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='relative w-8 h-8 rounded-full bg-gray-200'>
+              <Image
+                src={Dribbble}
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 Dribbble
@@ -97,7 +132,14 @@ const Portfolio = () => {
           </div>
           {/* Social card twitter */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='relative w-8 h-8 rounded-full bg-gray-200'>
+              <Image
+                src={Twitter}
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 Twitter
@@ -107,7 +149,14 @@ const Portfolio = () => {
           </div>
           {/* Social card linkedin */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-8 h-8 rounded-full bg-gray-200'></span>
+            <span className='relative w-8 h-8 rounded-full bg-gray-200'>
+              <Image
+                src={Linkedin}
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-xs text-gray-500 p-0 tracking-wide capitalize'>
                 Linkedin
@@ -124,7 +173,16 @@ const Portfolio = () => {
           <h1 className='font-semibold text-gray-600 mb-2'>Languages</h1>
           {/* Language card english */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-10 h-10 rounded-full bg-gray-200'></span>
+            <span className='relative w-10 h-10 rounded-full bg-gray-200 overflow-hidden'>
+              <Image
+                src={
+                  'http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg'
+                }
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-gray-800 font-semibold p-0 tracking-wide capitalize'>
                 English
@@ -134,7 +192,16 @@ const Portfolio = () => {
           </div>
           {/* Language card amharic */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-10 h-10 rounded-full bg-gray-200'></span>
+            <span className='relative w-10 h-10 rounded-full bg-gray-200 overflow-hidden'>
+              <Image
+                src={
+                  'http://purecatamphetamine.github.io/country-flag-icons/3x2/ET.svg'
+                }
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-gray-800 font-semibold p-0 tracking-wide capitalize'>
                 Amahric
@@ -144,7 +211,16 @@ const Portfolio = () => {
           </div>
           {/* Language card amharic */}
           <div className='flex gap-3 justify-start items-center my-1'>
-            <span className='w-10 h-10 rounded-full bg-gray-200'></span>
+            <span className='relative w-10 h-10 rounded-full bg-gray-200 overflow-hidden'>
+              <Image
+                src={
+                  'http://purecatamphetamine.github.io/country-flag-icons/3x2/NL.svg'
+                }
+                alt='profile'
+                fill
+                className='object-cover'
+              />
+            </span>
             <div className='flex flex-col'>
               <h1 className='text-gray-800 font-semibold p-0 tracking-wide capitalize'>
                 Dutch
@@ -156,9 +232,9 @@ const Portfolio = () => {
 
         <hr className='border-gray-300' />
 
-        {/* Skills */}
+        {/* Hobbies */}
         <div className='flex flex-col gap-2'>
-          <h1 className='font-semibold text-gray-600 mb-2'>Skills</h1>
+          <h1 className='font-semibold text-gray-600 mb-2'>Hobbies</h1>
           {/* Skill card */}
           <p className='text-gray-500'>Football, Basketball, Coding</p>
         </div>
