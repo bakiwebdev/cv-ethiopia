@@ -13,12 +13,16 @@ import DownloadIcon from '../components/icons/DownloadIcon'
 
 const Portfolio = () => {
   return (
-    <main className='bg-white h-fit flex justify-start gap-16 max-w-6xl mx-auto p-10 my-10 rounded-md'>
-      <button className='fixed m-5 bottom-4 right-0 capitalize flex flex-1 gap-2 w-fit bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full'>
+    <main className='bg-white h-fit flex flex-col print:flex-row lg:flex-row justify-start gap-16 print:gap-4 max-w-6xl mx-auto print:mx-1 p-10 print:p-0 my-10 print:my-1 rounded-md'>
+      {/* // <main className='bg-white h-fit grid grid-cols-12 gap-16 print:gap-4 max-w-6xl mx-auto print:mx-1 p-10 print:p-0 my-10 print:my-1 rounded-md'> */}
+      <button
+        onClick={() => window.print()}
+        className='fixed m-5 bottom-4 right-0 capitalize flex flex-1 gap-2 w-fit bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full print:hidden'>
         <DownloadIcon />
         Download CV
       </button>
-      <section className='flex flex-col max-w-[18rem] h-fit gap-5'>
+      {/* first col */}
+      <section className='flex flex-col max-w-[18rem] h-fit gap-5 print:gap-1 col-span-4'>
         <div className='relative w-72 h-56 rounded-md overflow-hidden'>
           <Image
             src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
@@ -35,13 +39,13 @@ const Portfolio = () => {
             Serverless Architecture and Full Stack Developer
           </p>
         </div>
-        <hr className='border-gray-300' />
+        <hr className='border-gray-300 print:hidden' />
 
         {/* Personal Details */}
         <div className='flex flex-col gap-2'>
           <h1 className='font-semibold text-gray-600 mb-2'>Personal Details</h1>
           {/* personal detail card email */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
               <MailIcon />
             </span>
@@ -53,7 +57,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* personal detail card website */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
               <GlobeIcon />
             </span>
@@ -67,7 +71,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* personal detail card phone */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
               <PhoneIcon />
             </span>
@@ -79,7 +83,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* personal detail card address */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='w-8 h-8 flex justify-center items-center text-gray-600 rounded-full bg-gray-200'>
               <MapPinIcon />
             </span>
@@ -91,13 +95,13 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <hr className='border-gray-300' />
+        <hr className='border-gray-300 print:hidden' />
 
         {/* Social links */}
         <div className='flex flex-col gap-2'>
           <h1 className='font-semibold text-gray-600 mb-2'>Socials</h1>
           {/* Social card instagram */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-8 h-8 rounded-full bg-gray-200 overflow-hidden'>
               <Image
                 src={Instagram}
@@ -114,7 +118,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Social card dribbble */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-8 h-8 rounded-full bg-gray-200'>
               <Image
                 src={Dribbble}
@@ -131,7 +135,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Social card twitter */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-8 h-8 rounded-full bg-gray-200'>
               <Image
                 src={Twitter}
@@ -148,7 +152,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Social card linkedin */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-8 h-8 rounded-full bg-gray-200'>
               <Image
                 src={Linkedin}
@@ -166,13 +170,13 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <hr className='border-gray-300' />
+        <hr className='border-gray-300 print:hidden' />
 
         {/* Languages */}
         <div className='flex flex-col gap-2'>
           <h1 className='font-semibold text-gray-600 mb-2'>Languages</h1>
           {/* Language card english */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-10 h-10 rounded-full bg-gray-200 overflow-hidden'>
               <Image
                 src={
@@ -191,7 +195,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Language card amharic */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-10 h-10 rounded-full bg-gray-200 overflow-hidden'>
               <Image
                 src={
@@ -210,7 +214,7 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Language card amharic */}
-          <div className='flex gap-3 justify-start items-center my-1'>
+          <div className='flex gap-3 justify-start items-center my-1 print:my-[2px]'>
             <span className='relative w-10 h-10 rounded-full bg-gray-200 overflow-hidden'>
               <Image
                 src={
@@ -230,7 +234,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <hr className='border-gray-300' />
+        <hr className='border-gray-300 print:hidden' />
 
         {/* Hobbies */}
         <div className='flex flex-col gap-2'>
@@ -239,11 +243,12 @@ const Portfolio = () => {
           <p className='text-gray-500'>Football, Basketball, Coding</p>
         </div>
       </section>
-      <section className='flex flex-col gap-10'>
+      {/* second col */}
+      <section className='flex flex-col gap-10 print:gap-2 col-span-8'>
         {/* About me section */}
-        <section className='flex flex-col items-start max-w-2xl gap-4'>
+        <section className='flex flex-col items-start max-w-2xl gap-4 print:gap-2'>
           <div className='flex justify-center items-center gap-8'>
-            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50 print:hidden'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
             </span>
             <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
@@ -251,7 +256,7 @@ const Portfolio = () => {
             </h1>
           </div>
           {/* about me details */}
-          <section className='mx-14'>
+          <section className='mx-14 print:mx-0'>
             <p className='text-gray-500 tracking-wide'>
               Passionate web developer with a years of coding experience. I love
               building new products and improving existing ones. I am
@@ -261,9 +266,9 @@ const Portfolio = () => {
           </section>
         </section>
         {/* Skill section */}
-        <section className='flex flex-col items-start max-w-2xl gap-5'>
+        <section className='flex flex-col items-start max-w-2xl gap-5 print:gap-2'>
           <div className='flex justify-center items-center gap-8'>
-            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50 print:hidden'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
             </span>
             <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
@@ -271,40 +276,41 @@ const Portfolio = () => {
             </h1>
           </div>
           {/* list of skills */}
-          <section className='mx-14 flex flex-wrap gap-4'>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+          <section className='mx-14 print:mx-0 flex flex-wrap gap-4 print:gap-2'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               HTML
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               CSS
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               Typescript
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               Next JS
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               Express JS
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               MySQL
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               MongoDB
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               Communication
             </span>
-            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 py-1 uppercase'>
+            <span className='bg-gray-100 text-gray-800 text-sm font-semibold tracking-wide rounded-sm px-5 print:px-2 py-1 uppercase'>
               Teamwork
             </span>
           </section>
         </section>
         {/* Educations */}
-        <section className='flex flex-col items-start max-w-2xl gap-5'>
+        {/* <section className='flex flex-col items-start max-w-2xl gap-5 print:gap-2'> */}
+        <section className='flex flex-col items-start max-w-2xl gap-5 print:gap-2'>
           <div className='flex justify-center items-center gap-8'>
-            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50 print:hidden'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
             </span>
             <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
@@ -312,9 +318,9 @@ const Portfolio = () => {
             </h1>
           </div>
           {/* list of skills */}
-          <section className='mx-14 flex flex-wrap gap-4'>
+          <section className='mx-14 print:mx-0 grid grid-cols-2 gap-4 print:gap-1'>
             {/* st ragual church school */}
-            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+            <div className='flex flex-col flex-1 bg-gray-50 print:bg-white px-5 print:p-0 print:w-fit py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
               <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
                 St. Ragual Church School
               </h2>
@@ -324,7 +330,7 @@ const Portfolio = () => {
               </div>
             </div>
             {/* Hawassa university */}
-            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+            <div className='flex flex-col flex-1 bg-gray-50 print:bg-white px-5 print:p-0 print:w-fit py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
               <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
                 hawassa university
               </h2>
@@ -336,7 +342,7 @@ const Portfolio = () => {
               </div>
             </div>
             {/* Fontys University */}
-            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+            <div className='flex flex-col flex-1 bg-gray-50 print:bg-white px-5 print:p-0 print:w-fit py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
               <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
                 Fontys university
               </h2>
@@ -348,7 +354,7 @@ const Portfolio = () => {
               </div>
             </div>
             {/* HYF University */}
-            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+            <div className='flex flex-col flex-1 bg-gray-50 print:bg-white px-5 print:p-0 print:w-fit py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
               <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
                 HackYourFuture
               </h2>
@@ -362,18 +368,18 @@ const Portfolio = () => {
           </section>
         </section>
         {/* Experience */}
-        <section className='flex flex-col items-start max-w-2xl gap-5'>
+        <section className='flex flex-col items-start max-w-2xl gap-5 print:gap-2'>
           <div className='flex justify-center items-center gap-8'>
-            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
+            <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50 print:hidden'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
             </span>
             <h1 className='text-gray-800 tracking-wider font-semibold text-2xl capitalize'>
               Experience
             </h1>
           </div>
-          <section className='mx-14 flex flex-col gap-5 w-full'>
+          <section className='mx-14 print:mx-0 flex flex-col gap-5 print:gap-3 w-full'>
             {/* microsoft */}
-            <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+            <div className='flex flex-1 flex-col gap-3 h-10 print:max-w-xl max-w-lg'>
               <div className='flex flex-1 gap-4 w-fit text-gray-500'>
                 <span className=''>
                   <CalenderIcon />
@@ -434,10 +440,41 @@ const Portfolio = () => {
                 environments and ways of working.
               </p>
             </div>
+            {/* linkedin */}
+            <div className='flex flex-1 flex-col gap-3 h-10 max-w-lg'>
+              <div className='flex flex-1 gap-4 w-fit text-gray-500'>
+                <span className=''>
+                  <CalenderIcon />
+                </span>
+                <p className='font-semibold'>July 2021 - January 2022</p>
+              </div>
+              <div className='flex flex-1 gap-4 w-fit text-gray-500'>
+                <div className='relative w-12 h-12 rounded-md overflow-hidden'>
+                  <Image
+                    src={'https://avatars.githubusercontent.com/u/57604289?v=4'}
+                    alt='profile'
+                    fill
+                    className='object-cover'
+                  />
+                </div>
+                <div>
+                  <h2 className='text-gray-500 capitalize'>Linkedin</h2>
+                  <p className=' text-gray-800 font-semibold first-letter:capitalize'>
+                    UI/UX Designer
+                  </p>
+                </div>
+              </div>
+              <p className='text-gray-500 tracking-wide'>
+                Passionate web developer with a years of coding experience. I
+                love building new products and improving existing ones. I am
+                open-minded, have an agile mindset, and can quickly adapt to new
+                environments and ways of working.
+              </p>
+            </div>
           </section>
         </section>
         {/* Projects */}
-        <section className='flex flex-col items-start max-w-2xl gap-5'>
+        <section className='flex flex-col items-start max-w-2xl gap-5 print:hidden'>
           <div className='flex justify-center items-center gap-8'>
             <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
@@ -528,7 +565,7 @@ const Portfolio = () => {
           </section>
         </section>
         {/* Courses */}
-        <section className='flex flex-col items-start max-w-2xl gap-5'>
+        <section className='flex flex-col items-start max-w-2xl gap-5 print:hidden'>
           <div className='flex justify-center items-center gap-8'>
             <span className='flex justify-center items-center w-6 h-6 rounded-full shadow-lg border border-gray-50'>
               <span className='h-2 w-2 bg-green-400 rounded-full'></span>
@@ -540,7 +577,7 @@ const Portfolio = () => {
           {/* list of Courses */}
           <section className='mx-14 flex flex-wrap gap-4'>
             {/* Fullstack in HYF */}
-            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+            <div className='flex flex-col flex-1 bg-gray-50 print:bg-white px-5 print:p-0 print:w-fit py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
               <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
                 MERN Stack
               </h2>
@@ -550,7 +587,7 @@ const Portfolio = () => {
               </div>
             </div>
             {/* AWS Arcethectur */}
-            <div className='flex flex-col flex-1 bg-gray-50 px-5 py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
+            <div className='flex flex-col flex-1 bg-gray-50 print:bg-white px-5 print:p-0 print:w-fit py-2 gap-2 max-w-xs justify-between min-w-[16rem]'>
               <h2 className='text-gray-800 font-semibold first-letter:capitalize'>
                 AWS Serverless Architecture
               </h2>
