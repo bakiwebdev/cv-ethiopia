@@ -1,7 +1,7 @@
 import Basic from '../components/templates/Basic'
 
-const Portfolio = () => {
+const Preview = () => {
   return <Basic />
 }
 
-export default Portfolio
+export default Preview
